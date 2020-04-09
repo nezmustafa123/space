@@ -64,7 +64,7 @@ header{
 	margin: 0 auto;
 	width: 90%;
 	height: 70%;
-	background: #fff;
+
 	position: fixed;
 	display: flex; 
 	justify-content: space-around;
@@ -77,24 +77,63 @@ header{
 	margin: 10px;
 	width: 30%;
 	height: 100%;
-	background: #333;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
+	border-radius: 10px;
+	overflow: hidden;
+	opacity: 0.8;
+	
 	
 }
+
+
+
+.column:hover {
+	
+}
+
 
 
 .column .picture {
 	width: 100%;
 	height: 60%;
-	background: salmon;
+	background: #2c3e50;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	color: #333; 
+}
+
+.column .picture img {
+	width: 80%;
 }
 
 
+.column .title {
+	width: 100%;
+	height: 10%;
+	
+	background: #fff;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+}
+
 .column .text {
 	width: 100%;
-	height: 40%;
-	background: red;
+	height: 30%;
+	background: #f0f0f0;
+	display: flex;
+	justify-content: center;
+}
+
+
+.column .text p {
+	width: 80%;
+	height: auto;
+	text-align: center;
+	
 }
 
