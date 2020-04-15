@@ -8,6 +8,10 @@
 		
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: roboto;
 	background: #fff;
@@ -72,15 +76,15 @@ header{
 	display: flex; 
 	justify-content: space-around;
 	align-items: center;
-	background: #fff;
+
 }
 
 
 
 .column {
 	margin: 10px;
-	width: 30%;
-	height: 100%;
+	width: 28%;
+	height: 84%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -88,17 +92,21 @@ header{
 	border-radius: 10px;
 	overflow: hidden;
 	opacity: 0.8;
-	
-	
-}
-
-
-
-.column:hover {
+	transition: 0.2s ease;
 	
 }
 
 
+
+.column:hover{
+	width: 30%;
+	height: 100%;
+}
+
+
+.column:hover img{
+	transform: rotate(40deg);
+}
 
 .column .picture {
 	width: 100%;
@@ -111,7 +119,9 @@ header{
 }
 
 .column .picture img {
-	width: 80%;
+	
+	width: 50%;
+	transition: 2.5s ease;
 }
 
 
@@ -171,7 +181,94 @@ footer {
 }
 
 .contentf{
-	background: #fff;
+/*	background: #fff;*/
 	width: 90%;
 	height: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	border-radius: 10px 10px 0px 0px;
 }
+
+.contentf .picture {
+/*	background: salmon;*/
+	height: 40%;
+	width: 100%;
+	border-radius: 20px 20px 0px 0px;
+	
+}
+
+.contentf .text {
+/*	background: tomato;*/
+	height: 65%;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+    align-items: center;
+}
+
+
+form {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+
+input[type="search"] {
+	border-radius: 50px;
+	padding: 2vh 3vh 2vh 3vh;
+	outline: none; 
+	border: none;
+	color: #333;
+	width: 40%;
+	height: 30%;
+	font-size: 1.3em;
+	opacity: 0.7;
+	
+}
+
+
+
+.titlef {
+/*	background: #333;*/
+	overflow: hidden;
+	height: 30%;
+	width: 60%;
+	color: #f0f0f0;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	font-size: 1.2em;
+	padding-top: 25px;
+	
+}
+
+
+.paragraghf{
+/*	position: absolute;*/
+/*	background: #333;*/
+	overflow: hidden;
+	height: 70%;
+	width: 60%;
+	color: #f0f0f0;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	font-size: 1.2em;
+	text-align: center;
+/*	padding-top: 100px;*/
+	
+}
+
+
+
+
+
+
+
